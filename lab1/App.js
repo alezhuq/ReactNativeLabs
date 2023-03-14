@@ -8,12 +8,9 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import HeaderTabNavigator from "./components/HeaderTabNavigator";
+
 import { styles } from "./Style";
-import Task1 from "./screens/Task1";
-import Task2 from "./screens/Task2";
-import Task3 from "./screens/Task3";
 
 const Stack = createNativeStackNavigator();
 
@@ -28,13 +25,7 @@ const Main = () => {
 				}}
 			>
 				<StatusBar style="auto" />
-
-				<Stack.Navigator initialRouteName="Task1">
-					<Stack.Screen name="Task1" component={Task1} />
-					<Stack.Screen name="Task2" component={Task2} />
-					<Stack.Screen name="Task3" component={Task3} />
-				</Stack.Navigator>
-				<Footer></Footer>
+				<HeaderTabNavigator />
 			</View>
 		</NavigationContainer>
 	);

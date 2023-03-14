@@ -33,6 +33,31 @@ const styles = StyleSheet.create({
 		borderBottomColor: "black",
 		borderBottomWidth: 2,
 	},
+	button: {
+		alignItems: "center",
+		alignSelf: "center",
+		paddingVertical: 12,
+		paddingHorizontal: 32,
+		borderRadius: 4,
+		elevation: 3,
+		width: 180,
+	},
+	text: {
+		fontSize: 20,
+		lineHeight: 21,
+		fontWeight: "bold",
+		letterSpacing: 0.25,
+		color: "white",
+	},
+	res: {
+		alignSelf: "center",
+		fontSize: 20,
+		lineHeight: 21,
+		fontWeight: "bold",
+		letterSpacing: 0.25,
+		color: "black",
+		marginTop: 20,
+	},
 });
 
 export { styles };
