@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from "react-native";
 import Footer from "../components/Footer";
-
+import Header from '../components/Header';
 import Task1 from "../screens/Task1";
 import Task2 from "../screens/Task2";
 import Task3 from "../screens/Task3";
@@ -14,14 +14,8 @@ const botNavig = createBottomTabNavigator();
 function Lab1(){
     
     return(
-        // <View>
-        //     <Stack.Navigator>
-        //     <Stack.Screen name="Task1" component={Task1} />
-        //     <Stack.Screen name="Task2" component={Task2} />
-        //     <Stack.Screen name="Task3" component={Task3} />
-        //     </Stack.Navigator>
-        //     <Footer></Footer>
-        // </View>
+        <>
+        <Header labNum={1}/>
         <botNavig.Navigator screenOptions={({route})=>({
 
             tabBarIcon:()=>{
@@ -42,6 +36,7 @@ function Lab1(){
             <botNavig.Screen name="Task2" component={Task2} />
             <botNavig.Screen name="Task3" component={Task3} />
         </botNavig.Navigator>
+        </>
     )
 }
 

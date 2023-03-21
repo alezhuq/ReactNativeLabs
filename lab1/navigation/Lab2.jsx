@@ -4,6 +4,7 @@ import _ from 'lodash'
 import {
   LineChart,
 } from "react-native-chart-kit";
+import Header from '../components/Header';
 
 import {styles} from "../Style"
 
@@ -44,20 +45,7 @@ const Lab2 = () => {
 
   return (
     <>
-     <View
-      style={{        
-        backgroundColor: 'white',
-        // paddingTop: insets.top,
-        // alignItems: 'center'
-      }}>
-      <Text style={{
-        fontSize: 20
-      }}>Лабораторна робота №2</Text>
-      <Text style={{
-        fontSize: 20,
-        paddingBottom: 5
-      }}>Виконав </Text>
-    </View>
+     <Header labNum={2}/>
     <ScrollView style={{
           flex: 1,
           backgroundColor: '#82ccdd',
